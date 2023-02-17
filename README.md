@@ -225,14 +225,14 @@ For each cell in the table below:
 Modify the command above for the corresponding search function and container type;
 measure the runtime and enter it into the table.
 
-|                            | `array`  | `list`  | `tuple`     | `deque`       |
-| -------------------------- | ---------| --------|------------ | ------------- |
-| `sequential_search_itr`    |          |         |             |               |
-| `sequential_search_itr2`   |          |         |             |               |
-| `sequential_search_rec`    |  ---     | ---     |  ---        |  ---          |
-| `binary_search_itr`        |          |         |             |               |
-| `binary_search_rec`        |          |         |             |               |
-| `binary_search_rec2`       |          |         |             |  ---          |
+|                            |  `array`  |  `list`   | `tuple`   | `deque`       |
+| -------------------------- | - --------|  -------- |---------  | ------------- |
+| `sequential_search_itr`    | 9.17 msec | 1.16 msec | 1.24 msec |  1.27 msec    |
+| `sequential_search_itr2`   | 11.3 msec | 2.37 msec | 2.69 msec |  115 msec     |
+| `sequential_search_rec`    |   ---     |  ---      |  ---      |  ---          |
+| `binary_search_itr`        | 10.7 usec | 2.56 usec | 2.27 usec |  185 usec     |
+| `binary_search_rec`        | 12.5 usec | 4.35 usec | 4.07 usec |  178 usec     |
+| `binary_search_rec2`       | 10.2 usec | 460 usec  | 427 usec  |  ---          |
 
 You should notice that:
 1. for the `array` container, all implementations of binary search work well
